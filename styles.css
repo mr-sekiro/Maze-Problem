@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+}
+
+#maze-container {
+  display: grid;
+  grid-template-columns: repeat(24, 30px); /* Adjust according to maze size */
+  grid-template-rows: repeat(13, 30px);
+  border: 2px solid black;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+}
+
+#buttons {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.wall {
+  background-color: blue;
+}
+
+.path {
+  background-color: white;
+}
